@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="76ab80b9c4bc439b883b44770c90f7ec" Name="Diagram1">
+        <EntityTypeShape EntityType="BibliotecaModel.Autor" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Categoria" Width="1.5" PointX="3" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Cliente" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.detallePrestamo" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Devoluciones" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Editorial" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Libro" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Prestamo" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Roles" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BibliotecaModel.Usuarios" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="BibliotecaModel.FK_Libro_Autor" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Libro_Categoria1" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Prestamo_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_detallePrestamo_Libro" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_detallePrestamo_Prestamo" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Devoluciones_Prestamo" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Libro_Editorial" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Prestamo_Usuarios1" ManuallyRouted="false" />
+        <AssociationConnector Association="BibliotecaModel.FK_Usuarios_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

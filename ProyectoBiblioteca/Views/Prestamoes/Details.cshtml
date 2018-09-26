@@ -1,0 +1,61 @@
+﻿@model ProyectoBiblioteca.Models.Prestamo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="colortitulo">Detalles del préstamo</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt class="colortitulo">
+            @Html.DisplayNameFor(model => model.Fecha_entrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_entrega)
+        </dd>
+
+        <dt class="colortitulo">
+            @Html.DisplayNameFor(model => model.Fecha_devolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_devolucion)
+        </dd>
+
+        <dt class="colortitulo">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt class="colortitulo">
+            @Html.DisplayNameFor(model => model.Cliente.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nombre)
+        </dd>
+
+        <dt class="colortitulo">
+            @Html.DisplayNameFor(model => model.Usuarios.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuarios.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*Botón Regresar*@
+    <button class="btn btn-lg btn-primary" title="Regresar al Listado">
+        @Html.ActionLink(" ", "Index", null, new { @class = "fas fa-chevron-circle-left" })
+    </button>
+    @*Botón Regresar*@
+
+</p>
